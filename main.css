@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: red;
+  color: white;
+}
+#buyPlea {
+  display: flex;
+  justify-content: center;
+  background-color: navy;
+  width: 100%
+}
