@@ -4,7 +4,7 @@ $.ajax({
     createFigure(data.products);
   }
 })
-
+//
 let getTitle = (arr) => {
   let i = 0;
   while (i < arr.length) {
@@ -19,22 +19,22 @@ let showTitle = (arr) => {
     i++;
   }
 }
-
-let showImage = (arr) => {
-  let i = 0;
-  while(i < arr.length) {
-    console.log(arr[i].images[0].src);
-    i++;
-  }
-}
-
-let displayImage = (arr) => {
-  let i = 0;
-  while(i < arr.length) {
-    $('body').append(`<img src=${arr[i].images[0].src}>`);
-    i++;
-  }
-}
+//
+// let showImage = (arr) => {
+//   let i = 0;
+//   while(i < arr.length) {
+//     console.log(arr[i].images[0].src);
+//     i++;
+//   }
+// }
+//
+// let displayImage = (arr) => {
+//   let i = 0;
+//   while(i < arr.length) {
+//     $('body').append(`<img src=${arr[i].images[0].src}>`);
+//     i++;
+//   }
+// }
 
 
 
@@ -45,3 +45,17 @@ let createFigure = (arr) => {
     i++;
   }
 }
+
+$('#showMe').click(
+  function() {
+    console.log('hey dude');
+    $('figcaption').show();
+  }
+);
+
+$('#hideMe').click(
+  function() {
+    console.log('hey dude');
+    $('figcaption').hide();
+  }
+);
