@@ -1,9 +1,7 @@
 $.ajax({
   url: "https://www.redbullshopus.com/products.json",
   success: function(data) {
-    showTitle(data.products);
-    displayImage(data.products);
-    // showImage(data.products);
+    createFigure(data.products);
   }
 })
 
@@ -34,6 +32,16 @@ let displayImage = (arr) => {
   let i = 0;
   while(i < arr.length) {
     $('body').append(`<img src=${arr[i].images[0].src}>`);
+    i++;
+  }
+}
+
+
+
+let createFigure = (arr) => {
+  let i = 0;
+  while (i < arr.length) {
+    $('#redBullStuff').append(`<figure><h3>${(arr[i].title)}</h3><img src=${arr[i].images[0].src}> <figcaption>${(arr[i].body_html)}</figcaption>`);
     i++;
   }
 }

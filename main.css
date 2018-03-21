@@ -2,9 +2,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: red;
+  font-family: "Trebuchet MS";
+  /* background-color: red; */
+  color: red;
+}
+
+h1 {
   color: white;
 }
+
 #buyPlea {
   display: flex;
   justify-content: center;
@@ -15,4 +21,24 @@ body {
 img {
   height: 200px;
   width: 200px;
+}
+
+#redBullStuff {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+figure {
+  width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  figcaption{
+    display: none;
+  }
+
+
 }
